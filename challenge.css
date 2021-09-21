@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+.container {
+  border: 5px solid #000;
+  width: 900px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.container::after {
+  content: "SALE";
+  letter-spacing: 2px;
+  font-size: 14px;
+  color: #fff;
+  display: inline-block;
+  background-color: #f00;
+  position: absolute;
+  padding: 5px 15px;
+  top: -16px;
+  left: -40px;
+}
+
+.colour-picker {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 30px;
+  margin-right: 10px;
+  border: none;
+}
+
+.colour-picker:nth-child(1) {
+  background-color: #000;
+}
+.colour-picker:nth-child(2) {
+  background-color: rgb(3, 0, 192);
+}
+.colour-picker:nth-child(3) {
+  background-color: #f00;
+}
+.colour-picker:nth-child(4) {
+  background-color: #ff0;
+}
+.colour-picker:nth-child(5) {
+  background-color: #0f0;
+}
+.colour-picker:nth-child(6) {
+  margin-right: 0;
+  background-color: rgb(83, 60, 10);
+}
+
+/* TITLE */
+h1 {
+  padding: 15px;
+}
+
+.product-title {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #e6e6e6;
+}
+
+/* PRODUCT INFORMATION */
+.price {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.shipping {
+  color: #b7b7b7;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.summary {
+  margin-bottom: 10px;
+}
+
+.more-info:link,
+.more-info:visited {
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.more-info:hover,
+.more-info:active {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* PRODUCT DETAILS */
+.details-title {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 35px;
+}
+
+.details-list {
+  list-style: square;
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+.add-cart {
+  border: none;
+  border-top: 5px solid #000;
+  color: #fff;
+  background-color: #000;
+  text-transform: uppercase;
+  font-size: 20px;
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+}
+
+/* BUTTON */
+.add-cart:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+/* FLOATS */
+.price {
+  float: left;
+}
+.shipping {
+  float: right;
+  padding: 12px;
+}
+.summary {
+  clear: both;
+}
+
+.product-image {
+  float: left;
+}
+
+.section-1 {
+  width: 320px;
+  padding: 20px;
+  float: left;
+}
+.section-2 {
+  width: 320px;
+  float: right;
+  padding: 20px;
+}
+
+.details-title {
+  margin-top: 0;
+}
