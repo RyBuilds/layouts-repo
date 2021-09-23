@@ -72,13 +72,12 @@
         grid-row: 2 / 3;
       }
 
-      .el--6 {
+      /* .el--6 {
         grid-column: 2 / 3;
         grid-row: 2 / 4;
-      }
+      } */
 
       .container--2 {
-        display: none;
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
@@ -86,9 +85,27 @@
         margin: 100px;
 
         width: 1000px;
-        height: 600px;
+        height: 700px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 250px 400px 250px;
+        grid-template-rows: 400px 200px;
+        gap: 20px;
+
+        /* ALIGNING TRACKS INSIDE CONTAINER */
+        /* DISTRIBUTING EMPTY SPACE */
+        justify-content: center;
+        align-content: center;
+        /* ALIGNING ITEMS INSIDE CELLS */
+        /* MOVING ITEMS AROUND INSIDE THE CELLS */
+        align-items: center;
+        justify-items: center;
+      }
+
+      .el--3 {
+        align-self: end;
+        justify-self: end;
       }
     </style>
   </head>
